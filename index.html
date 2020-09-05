@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    
+
+
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="app-wrap">
+        
+        <header>
+            <input type="text" autocomplete="off" placeholder="Search A Location.." class="search-box">
+           
+        </header>
+        
+        <main>
+    
+            <section class="location">
+                <div class="city">-</div>
+                <div class="date">-</div>
+            </section>
+            <div class="weather-icon">
+                <img class="icon" src="icons/unknown.png" alt="">
+            </div>
+            <div class="current">
+                <div class="temp-value">
+                   -<span>°C</span>
+                </div>
+                <div class="temp-description">
+                    <p>-</p>
+                </div>
+                <div class="high-low">-°C/-°C</div>
+            </div>
+            
+        </main>
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDewq0elG26m6i_yzbbGnaN8D04PZ4TUBg",
+    authDomain: "weather-app-9405c.firebaseapp.com",
+    databaseURL: "https://weather-app-9405c.firebaseio.com",
+    projectId: "weather-app-9405c",
+    storageBucket: "weather-app-9405c.appspot.com",
+    messagingSenderId: "23455563545",
+    appId: "1:23455563545:web:c2290364d56436df2b0f88"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    
+</body>
+</html>
